@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_slate_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="SECRET" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="****" />
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="GUESS NUMBER" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/editText1"
+                android:background="@drawable/squarebox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLength="1"/>
+
+
+            <NumberPicker
+                android:id="@+id/editText2"
+                android:background="@drawable/squarebox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLength="1"/>
+
+            <NumberPicker
+                android:id="@+id/editText3"
+                android:background="@drawable/squarebox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLength="1"/>
+
+            <NumberPicker
+                android:id="@+id/editText4"
+                android:background="@drawable/squarebox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLength="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_trials"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+          />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_cows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+             />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:textColor="#fff"
+                android:background="@layout/validate_btn"
+                android:layout_marginRight="30dp"
+                android:text="Validate" />
+
+            <TextView
+                android:id="@+id/textView_Bulls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/misty_rose"
+                    android:id="@+id/tv_output"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@layout/validate_btn"
+                android:onClick="Hint"
+                android:layout_marginRight="125dp"
+                android:text="Hint??"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/resetbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@layout/danger_btn"
+                android:onClick="Reset"
+                android:text="Reset"
+                android:textColor="#fff" />
+        </RelativeLayout>
+        <!--        <TextView-->
+        <!--            android:id="@+id/textViewans"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:text="TextView" />-->
+    </LinearLayout>
+</RelativeLayout>

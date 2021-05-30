@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Bulls And Cows</string>
+    <string name="category_newgame">New Game</string>
+    <string name="category_connecttofriend">Online</string>
+
+    <string name="category_about">About</string>
+
+    <string name="back">Back</string>
+
+    <string name="about_note">
+        This game is made by Hemant Gupta.
+        \nContact Details
+        \n+917224996066
+        \n22hemantgupta@gmail.com
+        \nAny suggestions in the game would be helpful.
+        
+    </string>
+
+    <string name="game_help">
+           1-> One player, the Chooser, thinks of a four-letter word and the other player, the Guesser, tries to guess it.
+
+        \n\n2-> At each turn the Guesser tries a four-letter word, and the Chooser says how close it is to the answer by giving:
+
+        \n\n The number of Bulls - letters correct in the right position.
+        \n\n The number of Cows - letters correct but in the wrong position.
+        \n\n3-> The Guesser tries to guess the answer in the fewest number of turns.
+
+    \n\n Note:- If either word has repeated letters the rule is that each letter can only count towards the score once, and Bulls are counted before Cows.
+    </string>
+</resources>

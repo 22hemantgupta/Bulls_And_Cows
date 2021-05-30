@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_slate_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPlayer1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Player 1"
+            android:textColor="@color/gainsboro"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPlayer2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Player 2"
+            android:textColor="@color/gainsboro"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="LOCK Your NUMBER"
+            android:textColor="@color/gainsboro"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/squarebox"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <NumberPicker
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/squarebox"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/squarebox"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squarebox"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lock_btn"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@layout/validate_btn"
+                android:layout_alignParentLeft="true"
+                android:onClick="click"
+                android:layout_marginTop="5dp"
+                android:text="LOCK"
+                android:layout_marginLeft="55dp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:id="@+id/locked"
+                android:text="TextView"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="GUESS OPPONENT NUMBER" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="****"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="310dp">
+                    <TextView
+                        android:id="@+id/your_tv_output"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/dark_slate_gray"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+            </ScrollView>
+
+            <ScrollView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="310dp">
+
+                    <TextView
+                        android:id="@+id/oppo_tv_output"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/dark_slate_gray"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/calc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@layout/validate_btn"
+                android:onClick="Calc"
+                android:radius="10dp"
+                android:text="CALCULATE"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@layout/danger_btn"
+                android:onClick="Send"
+                android:text="SEND"
+                android:textColor="#fff" />
+        </RelativeLayout>
+        <!--        <TextView-->
+        <!--            android:id="@+id/textViewans"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:text="TextView" />-->
+    </LinearLayout>
+
+</RelativeLayout>
