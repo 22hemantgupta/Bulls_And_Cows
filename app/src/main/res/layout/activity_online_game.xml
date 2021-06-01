@@ -12,37 +12,14 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvPlayer1"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="Player 1"
-            android:textColor="@color/gainsboro"
-            android:textSize="10sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvPlayer2"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="Player 2"
-            android:textColor="@color/gainsboro"
-            android:textSize="10sp"
-            android:textStyle="bold" />
-
-
-        <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="LOCK Your NUMBER"
+            android:text="LOCK Your NUMBER First"
             android:textColor="@color/gainsboro"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
 
@@ -114,14 +91,15 @@
                 android:layout_alignParentLeft="true"
                 android:onClick="click"
                 android:layout_marginTop="5dp"
-                android:text="LOCK"
-                android:layout_marginLeft="55dp"
+                android:text="TextView"
+                android:layout_marginLeft="20dp"
                 android:textColor="#fff" />
 
             <TextView
-                android:layout_width="250dp"
-                android:textSize="30dp"
+                android:layout_width="100dp"
+                android:textSize="20dp"
                 android:gravity="center"
+                android:layout_marginRight="10dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/white"
@@ -129,70 +107,33 @@
                 android:text="TextView"/>
 
 
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@layout/validate_btn"
+                android:onClick="confirm"
+                android:layout_marginTop="5dp"
+                android:text="Confirm"
+                android:layout_marginLeft="170dp"
+                android:textColor="#fff" />
+
         </RelativeLayout>
 
-
-        <TextView
-            android:id="@+id/tvDisplay"
+        <EditText
             android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:layout_height="50dp"
+            android:id="@+id/sendtext"
             android:gravity="center"
-            android:text="TextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:textSize="20dp"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:text="GUESS OPPONENT NUMBER" />
+            />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:text="****"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="horizontal">
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_height="310dp">
-                    <TextView
-                        android:id="@+id/your_tv_output"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:padding="10dp"
-                        android:paddingLeft="10dp"
-                        android:textColor="@color/dark_slate_gray"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-            </ScrollView>
-
-            <ScrollView
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="310dp">
-
-                    <TextView
-                        android:id="@+id/oppo_tv_output"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:padding="10dp"
-                        android:paddingLeft="10dp"
-                        android:textColor="@color/dark_slate_gray"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-            </ScrollView>
-        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -225,12 +166,94 @@
                 android:text="SEND"
                 android:textColor="#fff" />
         </RelativeLayout>
-        <!--        <TextView-->
-        <!--            android:id="@+id/textViewans"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:text="TextView" />-->
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="SCOREBOARD" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Your Socre"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Opponent Socre"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/list_view1"
+                android:layout_weight="1"
+                android:layout_height="310dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dark_slate_gray"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:layout_weight="1"
+                android:id="@+id/list_view2"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dark_slate_gray"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </ListView>
+        </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:onClick="Deletedata"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Delete"
+            android:layout_marginTop="15dp"
+            android:background="@layout/danger_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"/>
+
     </LinearLayout>
 
 </RelativeLayout>

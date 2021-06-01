@@ -103,6 +103,7 @@ public class Newgame extends AppCompatActivity {
                 StringBuilder();
         output = new StringBuilder();
         guess_checker = new HashSet<String>();
+        secans="";
         tv_output.setText(output);
         count = 0;
         countb = 0;
@@ -115,6 +116,7 @@ public class Newgame extends AppCompatActivity {
         hint.setText("HINT");
         initial();
     }
+    String secans="";
 
     StringBuilder secret = new
             StringBuilder("");
@@ -130,6 +132,7 @@ public class Newgame extends AppCompatActivity {
                 StringBuilder();
         output = new StringBuilder();
         guess_checker = new HashSet<>();
+        secans="";
         Clear();
         tv_output.setText(output);
         count = 0;
@@ -166,7 +169,7 @@ public class Newgame extends AppCompatActivity {
         hintcounter++;
     }
 
-    String secans="";
+
     public void click(View view) {
         check1 = pos1.getValue();
         if (check1 != 0)     //size as per your requirement
@@ -251,8 +254,8 @@ public class Newgame extends AppCompatActivity {
         }).setCancelable(false);
 
         answer.setText("Answer is = "+secans);
-
-        ttrial.setText("Total Trials "+trial );
+        int trial1=10-trial;
+        ttrial.setText("Total Trials "+trial1 );
 
         AlertDialog alert=builder.create();
         alert.show();
