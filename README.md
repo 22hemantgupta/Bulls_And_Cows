@@ -26,7 +26,7 @@
           
 ### APP Screenshots
 
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot1.jpg?raw=true =100x100)
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot1.jpg" alt="drawing" width="200"/>
 
 ![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot2.jpg?raw=true)
 
