@@ -26,22 +26,13 @@
           
 ### APP Screenshots
 
-<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot1.jpg" alt="drawing" width="200"/>
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot2.jpg?raw=true)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot3.jpg =100x100)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot4.jpg =100x100)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot5.jpg =100x100)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot6.jpg =100x100)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot7.jpg =100x100)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot8.jpg =100x100)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot9.jpg =100x100)
-
-![image](https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot10.jpg =100x100)
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot1.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot2.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot3.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot4.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot5.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot6.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot7.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot8.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot9.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/22hemantgupta/Bulls_And_Cows/blob/master/Appscreenshot/Screenshot10.jpg" alt="drawing" width="400"/>
