@@ -11,6 +11,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
@@ -92,19 +94,21 @@
                 android:onClick="click"
                 android:layout_marginTop="5dp"
                 android:text="TextView"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="60dp"
                 android:textColor="#fff" />
 
+
             <TextView
-                android:layout_width="100dp"
-                android:textSize="20dp"
+                android:id="@+id/turn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
                 android:gravity="center"
-                android:layout_marginRight="10dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:textColor="@color/white"
-                android:id="@+id/locked"
-                android:text="TextView"/>
+                android:text="TextView"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gainsboro"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
 
             <Button
@@ -115,7 +119,8 @@
                 android:onClick="confirm"
                 android:layout_marginTop="5dp"
                 android:text="Confirm"
-                android:layout_marginLeft="170dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
                 android:textColor="#fff" />
 
         </RelativeLayout>
@@ -135,13 +140,26 @@
             />
 
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
 
-            <Button
+            <TextView
+                android:layout_width="140dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:id="@+id/locked"
+                android:text="TextView"/>
+
+           <!-- <Button
                 android:id="@+id/calc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -152,20 +170,20 @@
                 android:onClick="Calc"
                 android:radius="10dp"
                 android:text="CALCULATE"
-                android:textColor="#fff" />
+                android:textColor="#fff" />-->
 
             <Button
                 android:id="@+id/send"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
                 android:background="@layout/danger_btn"
                 android:onClick="Send"
                 android:text="SEND"
                 android:textColor="#fff" />
-        </RelativeLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tvDisplay"
@@ -188,10 +206,10 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="55dp"
                 android:textSize="20dp"
                 android:textColor="@color/black"
-                android:text="Your Socre"/>
+                android:text="Your Score"/>
 
             <TextView
                 android:layout_weight="1"
@@ -201,24 +219,24 @@
                 android:layout_marginLeft="40dp"
                 android:textSize="20dp"
                 android:textColor="@color/black"
-                android:text="Opponent Socre"/>
+                android:text="Opponent Score"/>
 
         </LinearLayout>
 
-        <ScrollView
+        <!--<ScrollView
             android:layout_width="match_parent"
-            android:layout_height="190dp"
-            >
+            android:layout_height="170dp"
+            >-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:orientation="horizontal">
 
             <ListView
                 android:layout_width="match_parent"
                 android:id="@+id/list_view1"
                 android:layout_weight="1"
-                android:layout_height="310dp"
+                android:layout_height="190dp"
                 android:gravity="center_horizontal"
                 android:padding="10dp"
                 android:paddingLeft="10dp"
@@ -230,7 +248,7 @@
                 android:layout_weight="1"
                 android:id="@+id/list_view2"
                 android:layout_width="match_parent"
-                android:layout_height="310dp"
+                android:layout_height="190dp"
                 android:gravity="center_horizontal"
                 android:padding="10dp"
                 android:paddingLeft="10dp"
@@ -239,7 +257,7 @@
                 android:textStyle="bold" >
             </ListView>
         </LinearLayout>
-        </ScrollView>
+        <!--</ScrollView-->
 
         <Button
             android:id="@+id/delete_btn"

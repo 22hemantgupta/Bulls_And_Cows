@@ -11,18 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.BullsandCows">
-        <activity android:name=".HelpActivity"></activity>
-        <activity android:name=".About" />
-        <activity android:name=".OnlineGameActivity" />
-        <activity android:name=".Online_login" />
+        <activity android:name=".HelpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".About"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OnlineGameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Online_login"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Connecttofriend"
             android:label="@string/category_connecttofriend"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Newgame"
+            android:screenOrientation="portrait"
             android:label="@string/category_newgame" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".MainActivity"
             android:label="Bulls and Cows">
             <intent-filter>

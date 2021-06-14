@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,6 +53,8 @@ public class Newgame extends AppCompatActivity {
     }
 
     public void initial() {
+
+
         Random random = new Random();
         rand1 = random.nextInt(max - min + 1) + min;
         rand2 = random.nextInt(10);

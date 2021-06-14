@@ -65,6 +65,7 @@ public class OnlineGameActivity extends AppCompatActivity {
     StringBuilder output2=new StringBuilder();
 
     TextView tvPlayer1, tvPlayer2;
+    TextView turn;
     NumberPicker pos1;
     NumberPicker pos2;
     NumberPicker pos3;
@@ -152,7 +153,15 @@ public class OnlineGameActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull @NotNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        //sendtext.setText("");
+                                        confirm.setText("CONFIRMED");
+                                        if(requestType.equals("from"))
+                                        {
+                                            turn.setText("Your Turn");
+                                        }
+                                        else
+                                        {
+                                            turn.setText("Opponent Turn");
+                                        }
                                         numberview();
                                     }
                                 }
@@ -300,7 +309,7 @@ public class OnlineGameActivity extends AppCompatActivity {
                             if (!dataSnapshot.child("Sender").getValue().toString().equals(userName)) {
                                 message = ">>>" + message;
                             }
-                            messages2.add(message);
+                            messages2.add(0,message);
                         }
 
                         if (dataSnapshot.child("Sender").getValue().toString().equals(userName))
@@ -309,7 +318,7 @@ public class OnlineGameActivity extends AppCompatActivity {
                             /*if (!dataSnapshot.child("reciever").getValue().toString().equals(userName)) {
                                 message = ">>>" + message;
                             }*/
-                            messages1.add(message);
+                            messages1.add(0,message);
                         }
 
                     }
@@ -424,7 +433,7 @@ public class OnlineGameActivity extends AppCompatActivity {
     public void Deletedata(View view)
     {
 
-        myRef.child("Playing").child(playerSession).child("lock").removeValue();
+        //myRef.child("Playing").child(playerSession).child("lock").removeValue();
         ArrayList<String> m1=new ArrayList<>();
         myRef.child("Playing").child(playerSession).removeValue();
         arrayAdapter1 =new ArrayAdapter(OnlineGameActivity.this, R.layout.listview_textlayout,m1);
@@ -432,6 +441,7 @@ public class OnlineGameActivity extends AppCompatActivity {
 
         arrayAdapter2 =new ArrayAdapter(OnlineGameActivity.this, R.layout.listview_textlayout,m1);
         listView2.setAdapter(arrayAdapter2);
+        initial1();
 
     }
 
@@ -497,14 +507,19 @@ public class OnlineGameActivity extends AppCompatActivity {
         locked.setText("Locking");
         sendtext=(EditText)findViewById(R.id.sendtext) ;
         send=(Button)findViewById(R.id.send);
-        calc=(Button)findViewById(R.id.calc);
+        //calc=(Button)findViewById(R.id.calc);
         listView1=(ListView)findViewById(R.id.list_view1);
         listView2=(ListView)findViewById(R.id.list_view2);
         delbtn=(Button)findViewById(R.id.delete_btn);
         lock = (Button) findViewById(R.id.lock_btn);
         confirm=(Button) findViewById(R.id.confirm);
         lock.setText("Lock");
-        tvDisplay.setText("SOCREBOARD");
+        turn=(TextView)findViewById(R.id.turn);
+        tvDisplay.setText("SCOREBOARD");
+        turn.setText("Turn");
+        count=0;
+        trial=1;
+        confirm.setText("Confirm");
     }
     public void Clear() {
         pos1.setValue(1);
@@ -530,6 +545,7 @@ public class OnlineGameActivity extends AppCompatActivity {
         count=0;
         trial=1;
         lock.setText("Lock");
+        confirm.setText("Confirm");
         initial1();
     }
 
@@ -537,6 +553,7 @@ public class OnlineGameActivity extends AppCompatActivity {
     public void click(View view) {
 
         if(trial==1) {
+            secret1=new StringBuilder();
             check1 = pos1.getValue();
             if (check1 != 0)     //size as per your requirement
             {
@@ -554,7 +571,7 @@ public class OnlineGameActivity extends AppCompatActivity {
             pos1.requestFocus();
             trial = trial+1;
             lock.setText("GUESS");
-            locked.setText("Locked " + secret1);
+            locked.setText("Your Secret " + secret1);
         }
         else
         {

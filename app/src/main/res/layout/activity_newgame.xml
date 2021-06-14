@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/light_slate_gray"
+    android:background="@color/dark_slate_gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/dark_turquoise"
             android:textSize="30sp"
             android:textStyle="bold"
             android:text="SECRET" />
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/_light_green"
             android:textSize="25sp"
             android:textStyle="bold"
             android:text="****" />
@@ -40,7 +40,7 @@
             android:layout_height="51dp"
             android:gravity="center"
             android:text="TextView"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             tools:text="GUESS NUMBER" />
@@ -103,7 +103,7 @@
             android:text="TextView"
             android:textStyle="bold"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/light_blue"
           />
 
         <LinearLayout
@@ -118,7 +118,7 @@
                 android:layout_weight="1"
                 android:text="TextView"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/thistle"
                 android:layout_marginLeft="40dp"
              />
 
@@ -140,7 +140,7 @@
                 android:layout_weight="1"
                 android:text="TextView"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/thistle"
                 android:layout_alignParentRight="true"
                 />
         </LinearLayout>
