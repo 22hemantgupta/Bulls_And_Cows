@@ -10,8 +10,8 @@
          
 ### Backend Information
 
-         * I wrote a code that checks for possible number of bulls and cows.
-         * I used FIREBASE for the real time communication if you are playing with friend.
+         * Code that checks for possible number of bulls and cows.
+         * For Real time communication used FIREBASE if you are playing with friend.
          * Code to generate hint in any random position of a four digit number without and biasness.
          * Used Audioplayer for music effect.
          * Used Firebase Authentication to authenticate users and add to the database.
