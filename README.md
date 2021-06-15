@@ -1,7 +1,7 @@
 # Bulls_And_Cows
 ## This is a simple Android Game.
 
-### The game is consist of- 
+### This game is consist of - 
 
         * The Activity where you can play with computer offline.
         * If you want to play with your friends it has feature to connect with your friend online.
