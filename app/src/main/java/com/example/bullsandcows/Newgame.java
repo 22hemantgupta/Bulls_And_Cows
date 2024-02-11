@@ -89,7 +89,7 @@ public class Newgame extends AppCompatActivity {
         tv_output = findViewById(R.id.tv_output);
         Button b1 = (Button) findViewById(R.id.button1);
 
-        trials.setText("Trails Left : " + trial);
+        trials.setText("Trials Left : " + trial);
         c.setText("Cows : " + countc + "");
         b.setText("Bulls : " + countb + "");
         tvDisplay.setText("GUESS NUMBER");
