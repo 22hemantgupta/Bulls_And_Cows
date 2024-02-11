@@ -12,7 +12,7 @@
 
          * Code that checks for possible number of bulls and cows.
          * For Real time communication used FIREBASE if you are playing with friend.
-         * Code to generate hint in any random position of a four digit number without and biasness.
+         * Code to generate hint in any random position of a four digit number without any biasness.
          * Used Audioplayer for music effect.
          * Used Firebase Authentication to authenticate users and add to the database.
          * Used Hashing to check if you already guessed that number or not.
